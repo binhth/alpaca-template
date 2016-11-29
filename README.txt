@@ -10,7 +10,7 @@ here is simple example using template to change arrays control format
 	"/myArrayName/myArrayControlName": {
 		"templates": {
 			"control-text": "<input style='margin-left: 50px !important;width: 290px !important;margin-top: -6px;' type='{{inputType}}' id='{{id}}' {{#if options.placeholder}}placeholder='{{options.placeholder}}'{{/if}} {{#if options.size}}size='{{options.size}}'{{/if}} {{#if options.readonly}}readonly='readonly'{{/if}} {{#if name}}name='{{name}}'{{/if}} {{#each options.data}}data-{{@key}}='{{this}}'{{/each}} {{#each options.attributes}}{{@key}}='{{this}}'{{/each}}/>{{#if options.helper}}<p class='{{#if options.helperClass}} {{options.helperClass}}{{/if}}'><i class='info-sign'></i>{{{options.helper}}}</p>{{/if}}",
-		"control":"<div style='width: 50%;float: left;'>{{#if options.label}}<label style='font-weight: normal;' class='{{#if options.labelClass}} {{options.labelClass}}{{/if}} alpaca-control-label' for='{{id}}'>{{{options.label}}}</label>{{/if}} {{#control}}{{/control}}</div>"
+			"control":"<div style='width: 50%;float: left;'>{{#if options.label}}<label style='font-weight: normal;' class='{{#if options.labelClass}} {{options.labelClass}}{{/if}} alpaca-control-label' for='{{id}}'>{{{options.label}}}</label>{{/if}} {{#control}}{{/control}}</div>"
 		}
 	}
 }
